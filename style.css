@@ -1,0 +1,44 @@
+#wordCounterPopup {
+    position: absolute;
+    width: 220px;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    animation: fadeIn 0.2s ease-in-out;
+    transition: opacity 0.3s ease;
+}
+
+.popup-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #4fc3f7;
+}
+
+.popup-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+.popup-row span:last-child {
+    font-weight: 600;
+    color: #81c784;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

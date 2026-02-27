@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Word Counter",
+  "version": "1.0",
+  "description": "Shows word and letter count near cursor",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
